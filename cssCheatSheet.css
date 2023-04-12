@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+}
+body{
+  background-color: #f7ede2;
+}
+ul a{
+  text-decoration: none;
+  color: white;
+}
+ul {
+  display: inline;
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  z-index: 1;
+}
+li:nth-of-type(1){
+  float: left;
+  padding: 5px 8px;
+  margin: 5px;
+}
+li:nth-of-type(2), li:nth-of-type(3),li:nth-of-type(4){
+  float: right;
+  background-color: none;
+  color:none;
+  margin: 5px;
+}
+
+
+
+/*-----------------------------These aren't working like they're supposed to-----------------------------------*/
+#properties{
+  padding-top: 50px;
+}
+#properties a {
+  text-decoration: none;
+  color:white;
+}
+.property{
+  width: 50%;
+  height: 50%;
+  padding: 10px 0;
+  text-align: center;
+  align-content: center;
+  font-size: 2em;
+  margin: auto;
+}
+#textProperty{
+  background-color: #f6bd60;
+}
+#classProperty{
+  background-color: #f5cac3;
+}
+#colorProperty{
+  background-color: #84a59d;
+}
+#boxProperty{
+  background-color: #f28482;
+}
+#text{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#text > div{
+  border: 10px solid #454545;
+  background-color: #f6bd60;
+  margin: 10px;
+  padding: 20px;
+  font-size: 1em;
+  width: 200px;
+}
+p{
+  margin: 10px;
+}
+h3, h4{
+  text-align: center;
+}
+
+#class > div{
+  border: 10px solid #454545;
+  background-color: #f5cac3;
+  margin: 10px;
+  padding: 20px;
+  font-size: 1em;
+  width: 300px;
+}
+#class{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#color{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#color > div{
+  border: 10px solid #454545;
+  background-color: #84a59d;
+  margin: 10px;
+  padding: 20px;
+  font-size: 1em;
+  width: 250px;
+}
+
+#box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#box > div{
+  border: 10px solid #454545;
+  background-color: #f28482;
+  margin: 10px;
+  padding: 20px;
+  font-size: 1em;
+  width: 230px;
+}

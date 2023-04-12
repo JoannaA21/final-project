@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>CSS Cheatsheet</title>
+    <link rel="stylesheet" href="cssCheatSheet.css">
+</head>
+<body>
+
+    <ul>
+        <li><a href="index.html">Joanna Apellido</a></li>
+        <li class="topLink"><a href="hike.html"><img src="hobby.png" alt="heart" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32"></a></li>
+        <li class="topLink"><a href="#"><img src="CSSlogo.png" alt="HTML logo" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32"></a></li>
+        <li class="topLink"><a href="htmlCheatSheet.html"><img src="HTMLlogo.png" alt="HTML logo" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32"></a></li>
+      </ul>
+
+    <!-- <h1>Selectors</h1>
+    <p>A CSS selector is a pattern for matching web page components.</p>
+
+    <table border="3">
+        <tr>
+            <th>syntax</th>
+            <th>Type of Selector</th>
+            <th>property</th>
+            <th>value</th>
+        </tr>
+
+        <tr>
+            <td>.class</td>
+            <td>class selector</td>
+            <td>property</td>
+            <td>value</td>
+        </tr>
+
+        <tr>
+            <td>#id</td>
+            <td>id selector</td>
+            <td>property</td>
+            <td>value</td>
+        </tr>
+
+        <tr>
+            <td>parent child</td>
+            <td>descendant selector</td>
+            <td>property</td>
+            <td>value</td>
+        </tr>
+
+        <tr>
+            <td> *</td>
+            <td>universal selector</td>
+            <td>property</td>
+            <td>value</td>
+        </tr>
+
+        <tr>
+            <td>selector:pseudo-class</td>
+            <td>pseudo-class selector</td>
+            <td>property</td>
+            <td>value</td>
+        </tr>
+
+        <tr>
+            <td>selector1, selector2</td>
+            <td>grouping selector</td>
+            <td>property</td>
+            <td>value</td>
+        </tr>
+
+    </table>
+    
+    <h1>Properties</h1> -->
+
+    <div id="properties">
+        <div id="textProperty" class="property"> <a href="#text">Text Properties</a></div>
+        <div id="classProperty" class="property"><a href="#class">Classificattion Properties</a></div>
+        <div id="colorProperty" class="property"><a href="#color">Color and Background Properties</a></div>
+        <div id="boxProperty" class="property"> <a href="#box">Box Properties</a></div>
+    </div>
+
+    <div id="text">
+        <div class="text">
+            <h3>Word-Spacing</h3>
+            <p>defines an additional amount of spcae between words.</p>
+            <h4>Example</h4>
+            <p>p em{word-spacing: 0.4em;}</p>
+            <p>p.note {word-spacing: -0.2em;}</p>
+        </div>
+
+        <div class="text">
+            <h3>Letter-Spacing</h3>
+            <p>defines an additional amount of space in between characters.</p>
+            <h4>Example</h4>
+            <p>h1{letter-spacing: 0.1em;}</p>
+            <p>p.note{letter-spacing: -0.1em;}</p>
+        </div>
+
+        <div class="text">
+            <h3>Text-Decoration</h3>
+            <p>allows text ti be decorated through one of five properties:
+                <br>
+                underline, overline, line-through, blink, none.
+            </p>
+            <h4>Example</h4>
+            <p>a:link, a:visited, a:active {text-decoration: none;}</p>
+        </div>
+
+        <div class="text">
+            <h3>Vertical-Align</h3>
+            <p>used to alter the vertical positioning of an inline element, relative to its parent element or to the element's line.</p>
+            <h4>Example</h4>
+            <p>img.middle{vertical-align: middle;}</p>
+            <p>img{vertical-align: 50%}</p>
+            <p>.exponent{vertical-align: super;}</p>
+        </div>
+
+        <div class="text">
+            <h3>Text-transform</h3>
+            <p>allows for capitalizing the frst letter of each word (capitalize),
+                capitalizing all letters of a word (uppercase), 
+                using all small letters in each word (lowercase),
+                and the initial value (none).
+            </p>
+            <h4>Example</h4>
+            <p>h1 {transform: uppercase;}</p>
+            <p>h2 {transform: capitalize;}</p>
+        </div>
+
+        <div class="text">
+            <h3>Text-Align</h3>
+            <p>used to justify text left, center, right, and justify.</p>
+            <h4>Example</h4>
+            <p>h1 {text-align: center;}</p>
+            <p>p.text {text-align: justify;}</p>
+        </div>
+
+        <div class="text">
+            <h3>Text-Indent</h3>
+            <p>used to specify the amount of indentation prior to the first line of text.</p>
+            <h4>Example</h4>
+            <p>p {text-indent: 5em;}</p>
+        </div>
+
+        <div class="text">
+            <h3>Line-Heigh</h3>
+            <p>used to control the spacing between baselines of text.</p>
+            <h4>Example</h4>
+            <p>p {line-height: 250%;}</p>
+        </div>
+    </div>
+
+    <div id="class">
+        <div class="class">
+            <h3>List-Style-Type</h3>
+            <p>specifies the type of list-item marker, and is used if list-style-image is none or if image loading is turned off.</p>
+            <h4>Example</h4>
+            <p>li.square {list-style-type: square;}</p>
+            <p>ul.plain {list-style-type: none;}</p>
+            <p>ol {list-style-type: upper-alpha;} <br> /*A B C D E F etc.*/</p>
+            <p>ol ol {list-style-type: decimal;} <br> /*1 2 3 4 5 etc.*/</p>
+            <p>ol ol ol {list-style-type: lower-roman;} <br> /*i ii iii iv v etc.*/</p>
+        </div>
+
+        <div class="class">
+            <h3>List-Style-Image</h3>
+            <p>specifies the image that will be used as list-item marker when image
+                loading is turned on, replacing the marker specified in the 
+                list-style-type property.</p>
+            <h4>Example</h4>
+            <p>ul.check {list-style-image: url(/li-markers/checkmark.gif);}</p>
+            <p>ul li.x {list-style-imag: url(x.png);}</p>
+        </div>
+
+        <div class="class">
+            <h3>List-Style-Position</h3>
+            <p>determines where the marker is placed in regard to the list item.
+                If the value <em>inside</em> is used, the lines will wrap <u>under</u> the 
+                marker instead of being indented. <em>outside</em> is default.</p>
+            <h4>Example</h4>
+            <p>ul {list-style-position: inside;}</p>
+        </div>
+    </div>
+
+    <div id="color">
+        <div class="color">
+            <h3>Color</h3>
+            <p>changes the color of text.</p>
+            <h4>Example</h4>
+            <p>p {color: yellow;}</p>
+            <p>h1 {color: #FFFFFF;}</p>
+            <p>h2 {color: rgb(32,100,255);}</p>
+        </div>
+
+        <div class="color">
+            <h3>Background-Color</h3>
+            <p>sets the background color of an element.</p>
+            <h4>Example</h4>
+            <p>body {background-color: blue;}</p>
+            <p>h1 {background-color: #002104;}</p>
+        </div>
+
+        <div class="color">
+            <h3>Bckground-Image</h3>
+            <p>sets the background image of an element</p>
+            <h4>Example</h4>
+            <p>body {background-image: url("https://linkOfImage.jpg");}</p>
+            <p>p {background-image: url(/images.gif);}</p>
+        </div>
+
+        <div class="color"> 
+            <h3>Background-Repeat</h3>
+            <p>determines how a specified background image is repeated.
+                The repeat-x value will repeat the image horizontally while
+                the repeat-y value will repeat the image vertically.
+            </p>
+            <h4>Example</h4>
+            <p>body {background: white url(candy.gif); 
+                <br>
+             background-repeat:repeat-x;}</p>
+        </div>
+
+        <div class="color">
+            <h3>Background-Attachment</h3>
+            <p>determines if a specified background image will scroll with the content or be fixed with regard to the canvas.</p>
+            <h4>Example</h4>
+            <p>body {background: white url(candy/gif); 
+                <br>
+                background-attachment: fixed;}
+            </p>
+        </div>
+
+        <div class="color">
+            <h3>Background</h3>
+            <p>used to combine all properties of background.</p>
+            <h4>Example</h4>
+            <p>body {background: white url(https://www.css.com/foo.gif);}</p>
+            <p>bockquote{background: #7fffd4;}</p>
+            <p>p {background: url(image.png) #f08ff fixed;}</p>
+            <p>table {background: red url(leaves.jpg) no-repeat bottom right;}</p>
+        </div>
+    </div>
+
+    <div id="box">
+        <div class="box">
+            <h3>Margin</h3>
+            <p>sets the margins of an element by specifying top, bottom, left, and right margins
+                -- all either specifiying length or percentage.</p>
+            <h4>Example</h4>
+            <p>body {margin: 5em;} <br> /* all margins 5em*/</p>
+            <p>div {margin: 1em 2em 3em 4em;} <br> /*top margin = 1em, right margin = 2em, bottom margin = 3em, left margin = 4em*/</p>
+            <p>p {margin: 2em 4em;} <br> /*top and bottom margin = 2em, left and right margin = 4em*/</p>
+        </div>
+
+        <div class="box">
+            <h3>Padding</h3>
+            <p>used to create space around an element's content, inside of any defined borders.</p>
+            <h4>Example</h4>
+            <p>div {padding: 25px 50px 75px 100px;} <br> /*top padding = 25px, right padding = 50px, bottom padding = 75px, left padding = 100px*/</p>
+        </div>
+
+        <div class="box">
+            <h3>Border</h3>
+            <p>allow you to specify the style, width, and color of an element's border.</p>
+            <h4>Example</h4>
+            <p>p {border: 10px solid red;}</p>
+        </div>
+
+        <div class="box">
+            <h3>Width</h3>
+            <p>sets the width of an element.
+                The width of an element does not include padding, borders, or margins.</p>
+            <h4>Example</h4>
+            <p>p {width: 15px;}</p>
+            <p>h1 {width: 40%;}</p>
+            <p>.class {width: auto;}</p>
+        </div>
+
+        <div class="box">
+            <h3>Height</h3>
+            <p>each block-level or replaced element can be given a height, specified as length or as auto.</p>
+            <h4>Example</h4>
+            <p>p {height: 15px;}</p>
+            <p>h1 {height: 40%;}</p>
+            <p>.class {height: auto;}</p>
+        </div>
+
+        <div class="box">
+            <h3>Float</h3>
+            <p>allows text to wrap around an element (left, right, none).</p>
+            <p>Example</p>
+            <p>p {float: left;}</p>
+            <p>h1 {float: right;}</p>
+            <p>.class {float: none;}</p>
+        </div>
+
+        <div class="box">
+            <h3>Clear</h3>
+            <p>specifies whether an element allows floating elements to its sides (left, right, none).</p>
+            <p>p {clear: left;}</p>
+            <p>h1 {clear: right;}</p>
+            <p>.class {clear: none;}</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

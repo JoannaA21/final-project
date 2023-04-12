@@ -1,0 +1,115 @@
+:root{
+    --ScreenHeight: 100vh;   
+    --ScreenWidth: 100vw;      
+}
+
+*{
+    margin: 0;
+}
+
+#bigDiv p, #bigDiv a{
+    margin: 20px;
+}
+
+ul {
+    display: inline-block;
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    text-decoration: none;
+    z-index: 1;
+    border-bottom: 1px solid white;
+}
+li:nth-of-type(1){
+    float: left;
+    padding: 2px 8px;
+    margin: 5px;
+}
+#name{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 14px 0;
+}
+li:nth-of-type(2), li:nth-of-type(3),li:nth-of-type(4){
+    float: right;
+    background-color: none;
+    color:none;
+    margin: 5px;
+    }
+/*This made two divs to be right beside each other*/
+#bigDiv{
+    display: flex;
+    background-color: #009FBD;
+}
+#elements{
+    background-color: #009FBD;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    width: calc(var( --ScreenWidth)/1.5);
+    height: 100%;
+}
+
+#attributes{
+    background-color: #F9E2AF;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    width: calc(var( --ScreenWidth)/1.5);
+}
+
+.indent{
+    margin-left: 200px;
+}
+
+section{
+    background-color: white;
+    width: 300px;
+    border: 10px solid black;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 90px;
+}
+
+h4{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+}
+
+h1{
+    font-weight: 700;
+    line-height: 1.1;
+    font-size: 5rem;
+    padding-top: 50px;
+}
+#top{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+  #bigDiv a:link, #bigDiv  a:visited {
+    background-color: black;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+ #bigDiv a:hover{
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+}
+
+
+
